@@ -30,9 +30,9 @@ angular.module('myApp', ['myApp.filters', 'myApp.services', 'myApp.directives', 
       })          
     .state('view2', {
             templateUrl: "partials/partial2.html",
-        
+        	abstract: true
     })
-    .state('view2.AB', {
+    .state('view2.child', {
           url: "/view2",
           views: {
             "viewA": {
@@ -43,10 +43,10 @@ angular.module('myApp', ['myApp.filters', 'myApp.services', 'myApp.directives', 
             }
         }
       }) 
-      .state('view2.AB.11', {
+      .state('view2.child.11', {
           url: "/211",
           views: {
-            "viewAB1": {
+            "view21": {
                 templateUrl: "partials/partial211.html"
             }
         },
@@ -54,10 +54,10 @@ angular.module('myApp', ['myApp.filters', 'myApp.services', 'myApp.directives', 
             //$scope.items = ["A", "List", "Of", "Items"];
           }
       })
-      .state('view2.AB.12', {
+      .state('view2.child.12', {
           url: "/212",
           views: {
-            "viewAB1": {
+            "view21": {
                 templateUrl: "partials/partial212.html"
             }
         },
@@ -65,10 +65,10 @@ angular.module('myApp', ['myApp.filters', 'myApp.services', 'myApp.directives', 
             //$scope.items = ["A", "List", "Of", "Items"];
           }
       })
-      .state('view2.AB.21', {
+      .state('view2.child.21', {
           url: "/221",
           views: {
-            "viewAB2": {
+            "view22": {
                 templateUrl: "partials/partial221.html"
             }
         },
@@ -76,10 +76,10 @@ angular.module('myApp', ['myApp.filters', 'myApp.services', 'myApp.directives', 
             //$scope.items = ["A", "List", "Of", "Items"];
           }
       })
-      .state('view2.AB.22', {
+      .state('view2.child.22', {
           url: "/222",
           views: {
-            "viewAB2": {
+            "view22": {
                 templateUrl: "partials/partial222.html"
             }
         },
